@@ -1,0 +1,14 @@
+server:
+  port: 7001
+#配置Eureka Server
+eureka:
+  instance:
+    hostname: eureka7001.com
+  client:
+    register-with-eureka: false #是否将自己注册到注册中心
+    fetch-register: false #是否从eureka中获取信息
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+  security:
+    basic:
+      enabled: false
